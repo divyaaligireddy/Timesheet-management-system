@@ -1,0 +1,6 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:extend>
+	<h1 wicket:id="mess"></h1>
+	<form wicket:id="form1"></form>
+</wicket:extend>
+</html>

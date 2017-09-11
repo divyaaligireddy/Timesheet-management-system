@@ -1,0 +1,19 @@
+package com.prokarma.web.timesheet;
+
+import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.form.Form;
+
+public class Logout extends BasePage {
+
+	public Logout() {
+		((MySession) getSession()).setUsername(null);
+		((MySession) getSession()).setRole(null);
+		final Form<Object> form1 = new Form<Object>("form1");
+		form1.setOutputMarkupId(true);
+		add(form1);
+		add(new Label("mess", "User Logged Out Succesfully"));
+		setResponsePage(LoginPage.class);
+
+	}
+
+}

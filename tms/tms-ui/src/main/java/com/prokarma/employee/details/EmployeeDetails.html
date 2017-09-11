@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Employee Details</title>
+</head>
+<wicket:extend>
+<div id="totaldiv">
+<fieldset>
+<form wicket:id="empDetails">
+<div id="createUserId">
+<a wicket:id="addEmp">Create new User</a>
+</div>
+
+ <table cellspacing="0" cellpadding="3" border="1" align="center">
+	<tr>
+		<th>Username&nbsp;</th>
+		<th>email&nbsp;</th>
+		<th>Edit&nbsp;</th>
+		<th>Delete&nbsp;</th>
+		
+	</tr>
+ 	<tr wicket:id="emplistview">
+ 		
+		<td wicket:id="username"></td>
+		<td wicket:id="email"></td>
+		<td><a wicket:id="editlink" class="link">Edit&nbsp;&nbsp;</a>
+		</td>
+		<td><a wicket:id="deletelink" class="link">Delete&nbsp;&nbsp;</a></td>
+		
+	</tr>
+
+</table>
+<div wicket:id="empmodel"></div>
+</form>
+</fieldset>
+</div>
+</wicket:extend>
+</html>

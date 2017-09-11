@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/gtp2a/!svn/ver/13145/trunk/TimesheetManagementSystem/tms/SQLTables
+END
+TMS_EMPLOYEE.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/gtp2a/!svn/ver/13145/trunk/TimesheetManagementSystem/tms/SQLTables/TMS_EMPLOYEE.sql
+END
+TMS_PROJECT.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/gtp2a/!svn/ver/13145/trunk/TimesheetManagementSystem/tms/SQLTables/TMS_PROJECT.sql
+END
+TMS_TIMESHEET.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/gtp2a/!svn/ver/13145/trunk/TimesheetManagementSystem/tms/SQLTables/TMS_TIMESHEET.sql
+END

@@ -1,0 +1,103 @@
+body {
+	background-color: rgb(247, 243, 243);
+}
+
+#header {
+	background-color: rgb(110, 110, 110);
+	width: 1200px;
+	height: 140px;
+	margin-left: 400px;
+	margin-top: 70px;
+	border-radius: 5px;
+}
+
+#header #logo {
+	color: white;
+	font-size: xx-large;
+	font-family: fantasy;
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 350px;
+}
+
+#header #menudiv {
+	background-color: rgb(55, 180, 180);
+	width: 1200px;
+	height: 80px;
+	/* margin-left: 500px;
+	margin-top: 70px; */
+	border-radius: 5px;
+}
+
+#child {
+	background-color: rgb(255, 255, 255);
+	width: 1200px;
+	height: 740px;
+	margin-left: 400px;
+	margin-top: 70px;
+}
+
+#header #menudiv a {
+	font-family: cursive;
+	color: white;
+	font-size: large;
+	text-decoration: none;
+	margin-top: 80px;
+	margin-left: 50px;
+}
+
+#chi {
+	margin-top: -400px;
+}
+
+#login {
+	padding-top: 100px;
+	width: 500px;
+	height: 1500px;
+	margin-left: 800px;
+	margin-top: 100px;
+}
+
+#empdetails,#projdetails,#reports {
+	padding-top: 50px;
+	margin-top: 50px;
+}
+#approvetimesheets{
+	padding-top: 300px;
+	margin-top: 300px;
+}
+#reg{
+	padding-top: 500px;
+	margin-top: 500px;
+	width: 600px;
+}
+#list {
+	margin-left: 800px;
+	margin-top: 80px;
+}
+
+#createUserId {
+	padding-left: 300px;
+}
+
+#totaldiv {
+	height: 600px;
+	width: 550px;
+	margin-top: 100px;
+	margin-left: 600px;
+}
+
+#projectDetailsDivId {
+	margin-top: 100px;
+	margin-left: 800px;
+}
+
+#time {
+	margin-left: 300px;
+	width: 1400px;
+	margin-top: 70px;
+}
+
+#hari {
+	height: 300px;
+}

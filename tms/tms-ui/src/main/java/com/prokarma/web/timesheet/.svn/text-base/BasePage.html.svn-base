@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+
+<head>
+<script type="text/javascript"
+	src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript"
+	src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript"
+	src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/wicket-ajax-debug.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>Base Page</title>
+<wicket:link>
+
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+</wicket:link>
+</head>
+<div id="header">
+	..
+	<h3 id="logo" wicket:id="heading"></h3>
+	<p align="right" id="para">
+		User Logged in as:<label wicket:id="role" id="label"></label>-<label
+			wicket:id="name" id="label"></label>
+	</p>
+	<div align="right">
+	<a wicket:id="logout">Logout</a>
+	</div>
+	<div id="menudiv">
+		
+		<table>
+
+			<tr style="background-color: #149B9B; padding: 0px; margin: 0px;">
+
+				<td wicket:id="mgrMenuRepeater"><a wicket:id="menuLink"><label
+						wicket:id="menuLabel" style="cursor: auto;"></label></a>&nbsp;|&nbsp;</td>
+			</tr>
+			<tr style="background-color: #149B9B; padding: 0px; margin: 0px;">
+
+				<td wicket:id="empMenuRepeater"><a wicket:id="menuLink"><label
+						wicket:id="menuLabel" style="cursor: auto;"></label></a>&nbsp;|&nbsp;</td>
+			</tr>
+
+		</table>
+	</div>
+</div>
+
+
+
+<wicket:child></wicket:child>
+<div id="fb">
+	<div wicket:id="feedbackWrapper" align="center">
+		<div wicket:id="infoFeedback" align="left"
+			style="width: 300px; height: 50px; position: relative; border-color: black; background-color: aqua; color: black;"></div>
+		<div wicket:id="warnFeedback" align="left"
+			style="width: 300px; height: 50px; position: relative; border-color: black; background-color: yellow;; color: black;"></div>
+		<div wicket:id="errorFeedback" align="left"
+			style="width: 300px; height: 50px; position: relative; border-color: black; background-color: orange; color: black;"></div>
+	</div>
+</div>
+
+</html>

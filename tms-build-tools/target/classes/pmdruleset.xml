@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+
+<ruleset name="StarmapFavorites" xmlns="http://pmd.sf.net/ruleset/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd"
+  xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
+
+  <description>
+    The starmap Favorites ruleset contains links to rules that we like to
+    use in our project. While moving forward you may see adding new
+    rules to this file.
+  </description>
+
+  <rule ref="rulesets/basic.xml/EmptyCatchBlock" />
+  <rule ref="rulesets/basic.xml/EmptyIfStmt" />
+  <rule ref="rulesets/basic.xml/EmptyWhileStmt" />
+  <rule ref="rulesets/basic.xml/EmptyTryBlock" />
+  <rule ref="rulesets/basic.xml/EmptyFinallyBlock" />
+  <rule ref="rulesets/basic.xml/EmptySwitchStatements" />
+  <rule ref="rulesets/basic.xml/JumbledIncrementer" />
+  <rule ref="rulesets/basic.xml/ForLoopShouldBeWhileLoop" />
+  <rule ref="rulesets/basic.xml/UnnecessaryConversionTemporary" />
+  <rule ref="rulesets/basic.xml/OverrideBothEqualsAndHashcode" />
+  <rule ref="rulesets/basic.xml/DoubleCheckedLocking" />
+  <rule ref="rulesets/basic.xml/ReturnFromFinallyBlock" />
+  <rule ref="rulesets/basic.xml/EmptySynchronizedBlock" />
+  <rule ref="rulesets/basic.xml/UnnecessaryReturn" />
+  <rule ref="rulesets/basic.xml/EmptyStaticInitializer" />
+  <rule ref="rulesets/basic.xml/UnconditionalIfStatement" />
+  <rule ref="rulesets/basic.xml/EmptyStatementNotInLoop" />
+  <rule ref="rulesets/basic.xml/BooleanInstantiation" />
+  <rule ref="rulesets/basic.xml/UnnecessaryFinalModifier" />
+  <rule ref="rulesets/basic.xml/CollapsibleIfStatements" />
+  <rule ref="rulesets/basic.xml/UselessOverridingMethod" />
+  <rule ref="rulesets/basic.xml/ClassCastExceptionWithToArray" />
+  <rule ref="rulesets/basic.xml/AvoidDecimalLiteralsInBigDecimalConstructor" />
+  <rule ref="rulesets/basic.xml/UselessOperationOnImmutable" />
+  <rule ref="rulesets/basic.xml/MisplacedNullCheck" />
+  <rule ref="rulesets/basic.xml/UnusedNullCheckInEquals" />
+  <rule ref="rulesets/basic.xml/AvoidThreadGroup" />
+  <rule ref="rulesets/basic.xml/BrokenNullCheck" />
+  <rule ref="rulesets/basic.xml/BigIntegerInstantiation" />
+  <rule ref="rulesets/basic.xml/AvoidUsingOctalValues" />
+  <rule ref="rulesets/basic.xml/AvoidUsingHardCodedIP" />
+  <rule ref="rulesets/basic.xml/CheckResultSet" />
+  <rule ref="rulesets/basic.xml/AvoidMultipleUnaryOperators" />
+  <!--  <rule ref="rulesets/basic.xml/DontCallThreadRun" />-->
+  <rule ref="rulesets/unusedcode.xml"/>
+
+  <rule ref="rulesets/braces.xml/WhileLoopsMustUseBraces"/>
+  <rule ref="rulesets/braces.xml/ForLoopsMustUseBraces"/>
+
+  <rule ref="rulesets/design.xml/SimplifyBooleanReturns"/>
+  <rule ref="rulesets/design.xml/SwitchStmtsShouldHaveDefault"/>
+
+  <rule ref="rulesets/strings.xml/StringToString"/>
+  <rule ref="rulesets/strings.xml/StringInstantiation"/>
+
+  <rule ref="rulesets/controversial.xml/UnnecessaryConstructor"/>
+  <rule ref="rulesets/controversial.xml/NullAssignment"/>
+  <rule ref="rulesets/controversial.xml/UnusedModifier"/>
+
+  <rule ref="rulesets/codesize.xml/CyclomaticComplexity">
+      <properties>
+         <property name="reportLevel" value="5"/>
+      </properties>
+    </rule>
+  <rule ref="rulesets/braces.xml/IfStmtsMustUseBraces" />
+  <rule ref="rulesets/braces.xml/IfElseStmtsMustUseBraces" />
+
+  <rule ref="rulesets/coupling.xml/LooseCoupling" />
+
+  <rule ref="rulesets/design.xml/ConstructorCallsOverridableMethod" />
+  <rule ref="rulesets/design.xml/FinalFieldCouldBeStatic" />
+  <rule ref="rulesets/design.xml/CloseResource" />
+  <rule ref="rulesets/design.xml/ConfusingTernary" />
+  <rule ref="rulesets/design.xml/AvoidSynchronizedAtMethodLevel" />
+  <rule ref="rulesets/design.xml/AvoidConstantsInterface" />
+  <rule ref="rulesets/design.xml/UnsynchronizedStaticDateFormatter" />
+  <rule ref="rulesets/design.xml/PreserveStackTrace" />
+  <rule ref="rulesets/design.xml/UseCollectionIsEmpty" />
+  <rule
+    ref="rulesets/design.xml/ClassWithOnlyPrivateConstructorsShouldBeFinal" />
+  <rule ref="rulesets/design.xml/ReturnEmptyArrayRatherThanNull" />
+
+  <rule ref="rulesets/imports.xml/TooManyStaticImports">
+    <properties>
+      <property name="maximumStaticImports" value="5"/>
+    </properties>
+  </rule>
+  
+  <rule ref="rulesets/javabeans.xml/MissingSerialVersionUID" />
+
+  <rule ref="rulesets/strings.xml/InefficientEmptyStringCheck" />
+  <rule ref="rulesets/strings.xml/UseEqualsToCompareStrings" />
+  <rule ref="rulesets/strings.xml/AvoidStringBufferField" />
+
+  <rule ref="rulesets/strictexception.xml/AvoidCatchingThrowable" />
+  <rule ref="rulesets/strictexception.xml/AvoidRethrowingException" />
+  <rule ref="rulesets/strictexception.xml/DoNotExtendJavaLangError" />
+  <rule ref="rulesets/strictexception.xml/DoNotThrowExceptionInFinally" />
+
+</ruleset>
+
+
+

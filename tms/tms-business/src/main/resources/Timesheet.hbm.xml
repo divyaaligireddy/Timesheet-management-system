@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.prokarma.domainmodel.Timesheet" table="TMS_TIMESHEET">
+		<id name="timesheetId" type="java.lang.Integer">
+			<column name="TIMESHEET_ID" />
+			<generator class="increment" />
+		</id>
+
+		<property name="Begin_Date" type="java.util.Date">
+			<column name="BEGIN_DATE" />
+		</property>
+		<property name="end_Date" type="java.util.Date">
+			<column name="END_DATE" />
+		</property>
+		<property name="managerId" type="java.lang.Integer">
+			<column name="MANAGERID" />
+		</property>
+		<property name="description" type="java.lang.String">
+			<column name="DESCRIPTION" />
+		</property>
+		<property name="sunday" type="java.lang.Integer">
+			<column name="SUNDAY_HRS" />
+		</property>
+		<property name="monday" type="java.lang.Integer">
+			<column name="MONDAY_HRS" />
+		</property>
+		<property name="tuesday" type="java.lang.Integer">
+			<column name="TUESDAY_HRS" />
+		</property>
+		<property name="wednesday" type="java.lang.Integer">
+			<column name="WEDNESDAY_HRS" />
+		</property>
+		<property name="thursday" type="java.lang.Integer">
+			<column name="THURSDAY_HRS" />
+		</property>
+		<property name="friday" type="java.lang.Integer">
+			<column name="FRIDAY_HRS" />
+		</property>
+		<property name="saturday" type="java.lang.Integer">
+			<column name="SATURDAY_HRS" />
+		</property>
+		<property name="totalHours" type="java.lang.Integer">
+			<column name="TOTALHOURS" />
+		</property>
+		<property name="status" not-null="true" type="java.lang.String">
+			<column name="STATUS" />
+		</property>
+		<property name="created_by" type="java.lang.String">
+			<column name="CREATED_BY" />
+		</property>
+
+		<property name="date_created" type="timestamp">
+			<column name="DATE_CREATED" />
+		</property>
+
+		<property name="last_updated_by" type="java.lang.String">
+			<column name="LAST_UPDATED_BY" />
+		</property>
+
+		<property name="last_updated_date" type="timestamp">
+			<column name="LAST_UPDATED_DATE" />
+		</property>
+
+		<many-to-one name="project" class="com.prokarma.domainmodel.Project"
+			column="PROJECTID" unique="true" not-null="true" />
+		<many-to-one name="owner" class="com.prokarma.domainmodel.Employee"
+			column="EMPID" unique="true" not-null="true" />
+
+
+	</class>
+</hibernate-mapping>

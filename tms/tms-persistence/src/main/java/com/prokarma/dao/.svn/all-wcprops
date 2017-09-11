@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/gtp2a/!svn/ver/13433/trunk/TimesheetManagementSystem/tms/tms-persistence/src/main/java/com/prokarma/dao
+END
+TimesheetDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/gtp2a/!svn/ver/13297/trunk/TimesheetManagementSystem/tms/tms-persistence/src/main/java/com/prokarma/dao/TimesheetDao.java
+END
+ProjectDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/gtp2a/!svn/ver/13775/trunk/TimesheetManagementSystem/tms/tms-persistence/src/main/java/com/prokarma/dao/ProjectDao.java
+END
+ManagerDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/gtp2a/!svn/ver/13313/trunk/TimesheetManagementSystem/tms/tms-persistence/src/main/java/com/prokarma/dao/ManagerDao.java
+END
+EmployeeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/gtp2a/!svn/ver/13427/trunk/TimesheetManagementSystem/tms/tms-persistence/src/main/java/com/prokarma/dao/EmployeeDao.java
+END

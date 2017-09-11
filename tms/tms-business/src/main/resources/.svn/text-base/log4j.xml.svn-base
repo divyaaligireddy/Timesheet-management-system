@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="true">
+
+	<!-- applications are not allowed to write to stdout and stderr in dev/test/prod 
+		weblogic 10 environment. Any logging to these will be thrown out. -->
+	<appender name="LOGFILE" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="D:/tms/loggers.txt" />
+		<param name="MaxFileSize" value="1MB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%d{ISO8601}] [%p] [%c] [%m]%n" />
+		</layout>
+	</appender>
+
+	<logger name="org.apache.log4j" additivity="false">
+		<level value="WARN" />
+		<appender-ref ref="LOGFILE" />
+	</logger>
+
+	<logger name="org.apache.wicket" additivity="false">
+		<level value="WARN" />
+		<appender-ref ref="LOGFILE" />
+	</logger>
+
+	<logger name="org.springframework" additivity="false">
+		<level value="WARN" />
+		<appender-ref ref="LOGFILE" />
+	</logger>
+	<logger name="org.hibernate" additivity="false">
+		<level value="WARN" />
+		<appender-ref ref="LOGFILE" />
+	</logger>
+	<logger name="org.hibernate.SQL">
+		<level value="ALL" />
+		<appender-ref ref="LOGFILE" />
+	</logger>
+
+	<root>
+		<priority value="DEBUG" />
+		<appender-ref ref="LOGFILE" />
+	</root>
+
+</log4j:configuration>

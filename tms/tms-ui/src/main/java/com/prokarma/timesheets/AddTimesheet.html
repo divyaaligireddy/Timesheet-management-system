@@ -1,0 +1,204 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:extend>
+	<head>
+
+
+<LINK REL=stylesheet HREF="timesheet.css" TYPE="text/css">
+
+<style type="text/css">
+.style21 {
+	font-size: 32px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+.style22 {
+	font-family: Verdana, Arial, Helvetica, sans-serif
+}
+
+.style25 {
+	font-size: 12px
+}
+
+.style28 {
+	font-size: 12
+}
+
+.style29 {
+	font-size: 10px
+}
+
+.style30 {
+	font-size: 10
+}
+
+.style31 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.style32 {
+	width: 220px;
+	padding: 10px;
+	border: 5px light black;
+	margin: 0px;
+}
+</style>
+<title>TimeSheetManagement - Enter Hours</title>
+	</head>
+	<body>
+
+		<div id=time>
+			<form wicket:id="timesheetForm">
+				<table width="85%" border="1" align="center" cellpadding="0"
+					cellspacing="0">
+
+					<tr>
+						<td>
+							<table width="100%" border="0" align="center" cellpadding="4"
+								cellspacing="0" bordercolor="#CCCCCC">
+								<tr>
+									<td width="90%" height="60" valign="middle" bgcolor="#C2DCEB"><div
+											align="right" class="style17">
+											<div align="left">
+												<span class="style21">Enter Timesheet </span><br>
+											</div>
+										</div></td>
+								</tr>
+
+								<tr>
+
+
+
+
+									<table border="1" align="center" cellpadding="8"
+										cellspacing="0">
+										<tr>
+											<td>Employee Name</td>
+
+											<td wicket:id="employeename"></td>
+
+										</tr>
+										<tr>
+											<td>StartDate</td>
+
+											<td><div align="center" class="style30">
+													<input name="startdate" wicket:id="startdate" type="text"
+														id="emp" size="10" maxlength="5">
+												</div></td>
+
+										</tr>
+										<tr>
+											<td>EndDate</td>
+
+											<td><div align="center" class="style30">
+													<input name="enddate" wicket:id="enddate" type="text"
+														id="emp" size="10" maxlength="5">
+												</div></td>
+
+										</tr>
+										<tr>
+											<td>Description</td>
+
+											<td><div align="center" class="style30">
+													<textarea wicket:id="description" rows="5" cols="10"></textarea>
+												</div></td>
+
+
+										</tr>
+
+
+
+
+									</table>
+
+
+								</tr>
+
+								<tr>
+									<td colspan="2"><p align="center">
+											<br> <span class="style31"> Enter Your Hours Here</span>
+										</p>
+										<fieldset>
+											<legend>Time Entries:</legend>
+											<table border="1" align="center" cellpadding="8"
+												cellspacing="0">
+												<tr>
+													<th scope="row"><span class="style25">ProjectCode</span></th>
+													<!--   <th scope="row"><span class="style25">Location</span></th> -->
+													<th><span class="style25">Mo</span></th>
+													<th><span class="style25">Tu</span></th>
+													<th><span class="style25">We</span></th>
+													<th><span class="style25">Th</span></th>
+													<th><span class="style25">Fr</span></th>
+													<th><span class="style25">Sa</span></th>
+													<th><span class="style25">Su</span></th>
+													<th><span class="style25">Total</span></th>
+													<!-- <th><span class="style25">Action</span></th> -->
+												</tr>
+												<tr>
+
+													<td wicket:id="projectcode"></td>
+
+
+													<td><div align="center" class="style30">
+															<input name="sun" wicket:id="sunday" type="text"
+																id="hoursMo44" size="4" maxlength="5">
+														</div></td>
+													<td size="3"><span class="style30"> <input
+															name="mon" wicket:id="monday" type="text" id="hoursMo"
+															size="4" maxlength="5">
+													</span></td>
+													<td size="3"><span class="style30"> <input
+															name="tue" wicket:id="tuesday" type="text" id="hoursMo8"
+															size="4" maxlength="5">
+													</span></td>
+													<td size="3"><span class="style30"> <input
+															name="wed" wicket:id="wednesday" type="text"
+															id="hoursMo9" size="4" maxlength="5">
+													</span></td>
+													<td size="3"><span class="style30"> <input
+															name="thu" wicket:id="thursday" type="text"
+															id="hoursMo14" size="4" maxlength="5">
+													</span></td>
+													<td size="3"><span class="style30"> <input
+															name="fri" wicket:id="friday" type="text" id="hoursMo42"
+															size="4" maxlength="5">
+													</span></td>
+													<td size="3"><div align="center" class="style30">
+															<input name="sat" wicket:id="saturday" type="text"
+																id="hoursMo43" size="4" maxlength="5">
+														</div></td>
+
+
+													<td size="3"><span class="style30"> <input
+															name="total" wicket:id="total" type="text" id="total"
+															size="7" maxlength="5">
+													</span></td>
+
+												</tr>
+
+											</table>
+										</fieldset>
+										<p align="center">
+											<input name="submit" wicket:id="submit" type="button"
+												id="submit" value="Submit"> &nbsp; <input
+												name="print" wicket:id="cancel" type="button" id="print"
+												value="Cancel"> &nbsp;<br>
+										</p></td>
+								</tr>
+								<tr>
+									<td colspan="2" bgcolor="#C2DCEB">&nbsp;</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<p>&nbsp;</p>
+			</form>
+		</div>
+	</body>
+</wicket:extend>
+</html>

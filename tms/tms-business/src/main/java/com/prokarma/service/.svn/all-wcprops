@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/gtp2a/!svn/ver/13425/trunk/TimesheetManagementSystem/tms/tms-business/src/main/java/com/prokarma/service
+END
+ProjectService.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/gtp2a/!svn/ver/13777/trunk/TimesheetManagementSystem/tms/tms-business/src/main/java/com/prokarma/service/ProjectService.java
+END
+ManagerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/gtp2a/!svn/ver/13314/trunk/TimesheetManagementSystem/tms/tms-business/src/main/java/com/prokarma/service/ManagerService.java
+END
+EmployeeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/gtp2a/!svn/ver/13424/trunk/TimesheetManagementSystem/tms/tms-business/src/main/java/com/prokarma/service/EmployeeService.java
+END
+UserContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/gtp2a/!svn/ver/12910/trunk/TimesheetManagementSystem/tms/tms-business/src/main/java/com/prokarma/service/UserContext.java
+END
+TimesheetService.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/gtp2a/!svn/ver/13315/trunk/TimesheetManagementSystem/tms/tms-business/src/main/java/com/prokarma/service/TimesheetService.java
+END

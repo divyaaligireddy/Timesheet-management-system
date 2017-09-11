@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.prokarma.domainmodel.Project" table="TMS_PROJECT">
+		<id name="projectId" type="java.lang.Integer">
+			<column name="PROJECTID" />
+			<generator class="increment" />
+		</id>
+		<property name="projectName" type="java.lang.String">
+			<column name="PROJECTNAME" />
+		</property>
+		<property name="codename" type="java.lang.String">
+			<column name="CODENAME" />
+		</property>
+		
+		<property name="managerId" type="java.lang.Integer">
+			<column name="MANAGERID" />
+		</property>
+		
+		<property name="techUsed" type="java.lang.String">
+			<column name="TECHUSED" />
+		</property>
+		<property name="description" type="java.lang.String">
+			<column name="DESCRIPTION" />
+		</property>
+		<property name="start_Date" type="java.util.Date">
+			<column name="START_DATE" />
+		</property>
+		<property name="end_Date" type="java.util.Date">
+			<column name="END_DATE" />
+		</property>
+		
+		<property name="status" type="java.lang.String">
+			<column name="STATUS" />
+		</property>
+				
+		
+		<property name="created_by" type="java.lang.String">
+			<column name="CREATED_BY" />
+		</property>
+		<property name="date_created" type="timestamp">
+			<column name="DATE_CREATED" />
+		</property>
+		<property name="last_updated_by" type="java.lang.String">
+			<column name="LAST_UPDATED_BY" />
+		</property>
+		<property name="last_updated_date" type="timestamp">
+			<column name="LAST_UPDATED_DATE" />
+		</property>
+		
+		<set name="timesheets" cascade="all">
+        	<key column="PROJECTID"></key>
+        	<one-to-many class="com.prokarma.domainmodel.Timesheet" />
+        </set>
+        
+        
+        <set name="employees" cascade="save-update" fetch="join" lazy="false">
+        	<key column="PROJECTID"></key>
+        	<one-to-many class="com.prokarma.domainmodel.Employee" />
+        </set>
+        
+      
+	</class>
+</hibernate-mapping>

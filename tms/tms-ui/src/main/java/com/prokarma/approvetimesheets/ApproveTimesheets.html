@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:extend>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<wicket:link>
+       
+       <link href="style.css" rel="stylesheet" type="text/css">
+
+       </wicket:link>
+</head>
+
+
+<body>
+<div id="list">
+<table border="2" cellpadding="2" cellspacing="2">
+
+
+
+<tr>
+
+<th>EmpId</th>
+<th>EmpName</th>
+<th>BeginDate</th>
+<th>EndDate</th>
+<th>Status</th>
+ <th>Action</th>
+
+
+</tr>
+
+<tr wicket:id="timesheet">
+                
+				<td><label wicket:id="EmpId"></label></td>
+				<td><label wicket:id="EmpName"></label></td>
+				<td><label wicket:id="BeginDate"></label></td>
+				<td><label wicket:id="EndDate"></label></td>
+				<td><label wicket:id="Status"></label></td>
+				<td><a wicket:id="Approve" class="link">Approve&nbsp;&nbsp;</a> | <a wicket:id="Decline" class="link">Decline&nbsp;&nbsp;</a></td>
+				
+				
+					</tr>
+                 
+
+
+
+</table>
+</div>
+</body>
+</wicket:extend>
+</html>

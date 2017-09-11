@@ -1,0 +1,16 @@
+#-----------------------------------------------------------------------------
+# Checkstyle related properties
+#-----------------------------------------------------------------------------
+
+checkstyle.lib.dir=${project.test.lib.dir}/checkstyle-5.0-beta01
+
+# All reports go into this directory
+checkstyle.reports.dir=${project.build.reports.dir}/checkstyle
+
+# Checkstyle reports are deposited into these directories
+checkstyle.xml.dir=${checkstyle.reports.dir}/xml
+checkstyle.html.dir=${checkstyle.reports.dir}/html
+
+
+checkstyle.LineLength.max=120
+checkstyle.ParameterName.format=^(?!arg)[a-z][a-zA-Z0-9]*$

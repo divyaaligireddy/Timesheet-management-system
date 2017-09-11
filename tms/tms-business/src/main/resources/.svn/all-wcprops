@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/gtp2a/!svn/ver/13426/trunk/TimesheetManagementSystem/tms/tms-business/src/main/resources
+END
+Timesheet.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/gtp2a/!svn/ver/13529/trunk/TimesheetManagementSystem/tms/tms-business/src/main/resources/Timesheet.hbm.xml
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/gtp2a/!svn/ver/13294/trunk/TimesheetManagementSystem/tms/tms-business/src/main/resources/log4j.xml
+END
+Project.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/gtp2a/!svn/ver/12910/trunk/TimesheetManagementSystem/tms/tms-business/src/main/resources/Project.hbm.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/gtp2a/!svn/ver/13426/trunk/TimesheetManagementSystem/tms/tms-business/src/main/resources/applicationContext.xml
+END
+applicationContext_mysql.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/gtp2a/!svn/ver/12910/trunk/TimesheetManagementSystem/tms/tms-business/src/main/resources/applicationContext_mysql.xml
+END
+Employee.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/gtp2a/!svn/ver/13324/trunk/TimesheetManagementSystem/tms/tms-business/src/main/resources/Employee.hbm.xml
+END

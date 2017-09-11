@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Add Project</title>
+</head>
+<wicket:extend>
+	<div id="projectDetailsDivId">
+		<form wicket:id="addProj">
+			<table>
+				<tr>
+					<td>Select Employee Name:</td>
+					<td><select wicket:id="employees"></select></td>
+				</tr>
+
+				<tr>
+					<td>Project Code:<font color="red" style="font-weight: bold;">*</font>
+					</td><td><input type="text" wicket:id="projectcode"></td>
+					</tr>
+				<tr>
+					<td>Project Name:<font color="red" style="font-weight: bold;">*</font></td>
+					<td><input type="text" wicket:id="projectname"></td>
+				</tr>
+				<tr>
+					<td>Description</td>
+
+					<td><div align="center" class="style30">
+							<textarea wicket:id="description" rows="5" cols="10"></textarea>
+						</div></td>
+
+				</tr>
+				<tr>
+					<td>Technology Used:</td>
+					<td><input type="text" wicket:id="technology"></td>
+				</tr>
+				<tr>
+					<td>Start Date:</td>
+					<td><input type="text" wicket:id="start_Date"></td>
+				</tr>
+				<tr>
+					<td>End Date:</td>
+					<td><input type="text" wicket:id="end_Date"></td>
+				</tr>
+
+				<tr>
+					<td colspan="2" align="center"><input type="submit"
+						value="Save" style="color: red;" wicket:id="submitButton" /></td>
+				</tr>
+</table>
+</form>
+		
+	</div>
+	<!-- </fieldset> -->
+</wicket:extend>
+</html>

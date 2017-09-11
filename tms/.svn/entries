@@ -1,0 +1,83 @@
+10
+
+dir
+13453
+http://svn2.prokarma.com/svn/gtp2a/trunk/TimesheetManagementSystem/tms
+http://svn2.prokarma.com/svn/gtp2a
+
+
+
+2012-10-09T18:40:09.981598Z
+13434
+adivya
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+731a8127-7de1-4f1f-ac6a-70cd15250852
+
+SQLTables
+dir
+
+docs
+dir
+
+pom.xml
+file
+
+
+
+
+2012-10-10T06:08:05.463000Z
+8a96c31f94a91cbb6e62e47c03808eb9
+2012-10-07T12:16:26.486353Z
+13147
+adivya
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+697
+
+src
+dir
+
+tms-business
+dir
+
+tms-domain-model
+dir
+
+tms-persistence
+dir
+
+tms-ui
+dir
+
